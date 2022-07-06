@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylessurv.css">
+	<title>My Melody's Little Survey</title>
+  </head>
+  <body>
+    <header id="header">
+      <h1 id="title">My Melody's Little Survey</h1>
+	  
+	  <!-- MY MELODY HEADER IMAGE -->
+	  <div id="My-Melody">
+	  
+	    <div class="mymelo-head">
+		  <div class="head"></div>
+		  <div class="ear left"></div>
+		  <div class="ear right"></div>
+		  <div class="face">
+		    <div class="eye left">
+			  <div class="eyelid left"></div>
+			</div>
+		    <div class="eye right">
+			  <div class="eyelid right"></div>
+			</div>
+			<div class="nose"></div>
+		  </div>
+		  <div class="flap left"></div>
+		  <div class="flap right"></div>
+		</div>
+		
+		<!--<div class="mymelo-body"></div>-->
+	  </div>
+	  <!-- MY MELODY ENDS -->
+	  
+      <p id="description">Thank you for helping My Melody become even cuter!</p>
+    </header>
+    <main>
+      <form id="survey-form">
+        <label id="name-label">Name: 
+          <input id="name" type="text" placeholder="Enter your name" required />
+        </label>
+        <label id="email-label">Email: 
+          <input id="email" type="email" placeholder="Enter your email" required />
+        </label>
+        <label id="number-label">Age: 
+          <input id="number" type="number" min="10" max="120" placeholder="Enter your age"/>
+        </label>
+        <select id="dropdown">
+          <option></option>
+          <option></option>
+          <option></option>
+        </select>
+
+        <input type="radio" name="answer" value="1">
+        <input type="radio" name="answer" value="2">
+
+        <input type="checkbox" value="1"/>
+        <input type="checkbox" value="2"/>
+
+        <textarea></textarea>
+
+        <input type="submit" id="submit" />
+
+      </form>
+    </main>
+
+  </body>
+</html>
