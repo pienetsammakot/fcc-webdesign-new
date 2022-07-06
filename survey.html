@@ -5,14 +5,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylessurv.css">
 	<title>My Melody's Little Survey</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monofett&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet"> 
   </head>
   <body>
+    <h1 id="title"><span class="title">My Melody's</span> <span class="title">Little Survey</span></h1>
     <header id="header">
-      <h1 id="title">My Melody's Little Survey</h1>
 	  
 	  <!-- MY MELODY HEADER IMAGE -->
 	  <div id="My-Melody">
-	  
 	    <div class="mymelo-head">
 		  <div class="head"></div>
 		  <div class="ear left"></div>
@@ -29,8 +32,6 @@
 		  <div class="flap left"></div>
 		  <div class="flap right"></div>
 		</div>
-		
-		<!--<div class="mymelo-body"></div>-->
 	  </div>
 	  <!-- MY MELODY ENDS -->
 	  
@@ -38,15 +39,17 @@
     </header>
     <main>
       <form id="survey-form">
-        <label id="name-label">Name: 
-          <input id="name" type="text" placeholder="Enter your name" required />
-        </label>
-        <label id="email-label">Email: 
-          <input id="email" type="email" placeholder="Enter your email" required />
-        </label>
-        <label id="number-label">Age: 
-          <input id="number" type="number" min="10" max="120" placeholder="Enter your age"/>
-        </label>
+	    <section id="info">
+          <label id="name-label">Name: 
+            <input id="name" type="text" placeholder="Enter your name" required />
+          </label>
+          <label id="email-label">Email: 
+            <input id="email" type="email" placeholder="Enter your email" required />
+          </label>
+          <label id="number-label">Age: 
+            <input id="number" type="number" min="10" max="120" placeholder="Enter your age"/>
+          </label>
+		</section>
         <select id="dropdown">
           <option></option>
           <option></option>
