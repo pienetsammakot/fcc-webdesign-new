@@ -2,20 +2,39 @@
 	--mymelo-red: #d0281a;
 	--mymelo-border: #5d0000;
 	--mymelo-face: #fffce4;
+	--form-back: #f3c7b3;
+	--form-backf: #f9e8db;
+	
 }
 
 * {
 	box-sizing: border-box;
 }
 
+body {
+	width: 100vw;
+	height: 100vh;
+	background: linear-gradient(180deg, #f2b8b1, #f0c4af);
+}
+
+#title {
+    font-family: 'Monofett', cursive;
+	font-size: 3rem;
+	color: var(--mymelo-border);
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
 #header {
 	display: flex;
 	flex-direction: column;
-	margin: 10px auto;
 	width: 100vw;
 	height: 300px;
 	justify-content: center;
 	align-items: center;
+	position: relative;
+	top: -10%;
 }
 
 /* MY MELODY HEADER IMAGE */
@@ -29,7 +48,6 @@
 	width: 20%;
 	height: 47%;
 	left: 40%;
-	top: 10%;
 }
 
 .head {
@@ -174,10 +192,41 @@
 
 
 #description {
-	margin-top: 10px;
 	position: relative;
+	top: -17%;
+	font-family: 'Josefin Sans', sans-serif;
+    color: var(--mymelo-border);
 }
 
 label {
   display: inline-block;
 }
+
+#survey-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#info input {
+	margin-top: 5px;
+	background-color: var(--form-back);
+	color: var(--mymelo-border);
+	border: 2px solid var(--mymelo-border);
+	border-radius: 10px;
+	padding: 8px 20px;
+}
+
+#info input:focus {
+	outline: none;
+	background-color: var(--form-backf);
+}
+#number {
+	position: relative;
+	left: 3%;
+}
+
