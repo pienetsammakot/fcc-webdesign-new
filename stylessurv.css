@@ -198,14 +198,17 @@ body {
     color: var(--mymelo-border);
 }
 
-label {
-  display: inline-block;
-}
+
 
 #survey-form {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	width: 40vw;
+	position: relative;
+	top: -110px;
+	left: 30%;
+	border: 2px dotted rgba(208, 40, 26, 30%);
 }
 #info {
 	display: flex;
@@ -229,3 +232,4 @@ label {
 	position: relative;
 	left: 3%;
 }
+
