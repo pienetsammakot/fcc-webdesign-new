@@ -50,17 +50,38 @@
             <input id="number" type="number" min="10" max="120" placeholder="Enter your age"/>
           </label>
 		</section>
+		<p>Do you like My Melody?</p>
+		<label id="yes">
+		<input type="radio" name="answer" value="1" required> Yes
+		</label>
+		<label id="no">
+        <input type="radio" name="answer" value="2"required> No
+		</label>
+		<br>
+		<p>What is your favorite thing about My Melody?</p>
+		<br>
         <select id="dropdown">
-          <option></option>
-          <option></option>
-          <option></option>
+          <option value="">(select one)</option>
+          <option value="1">her ears</option>
+          <option value="2">her roundness</option>
+		  <option value="3">her kindness</option>
         </select>
-
-        <input type="radio" name="answer" value="1">
-        <input type="radio" name="answer" value="2">
-
-        <input type="checkbox" value="1"/>
-        <input type="checkbox" value="2"/>
+		<br>
+		
+		<p>What would you like to improve in My Melody?</p>
+		<label id="pink">
+          <input type="checkbox" value="1" name="change"/> Make her more pink
+		</label>
+		<label id="smile">
+        <input type="checkbox" value="2" name="change"/>Give her a wider smile
+		</label>
+		<label id="outfits">
+		  <input type="checkbox" value="3" name="change"/>Give her more different outfits
+		</label>
+		<label id="nothing">
+		  <input type="checkbox" value="4" name="change"/>Don't change a thing!
+		</label>
+		<br>
 
         <textarea></textarea>
 
@@ -68,6 +89,8 @@
 
       </form>
     </main>
+	<footer>
+	  <p>disclaimer: i am not affiliated with Sanrio Company, Ltd. in any way.</p>
 
   </body>
 </html>
